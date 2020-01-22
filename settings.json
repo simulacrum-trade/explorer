@@ -7,13 +7,13 @@
   // name your instance!
   "title": "CIQUIDUS",
 
-  "address": "127.0.0.1:3001",
+  "address": "https://explorer.simulacrum.trade",
 
   // coin name
-  "coin": "Chaincoin",
+  "coin": "Simulacrum",
 
   // coin symbol
-  "symbol": "CHC",
+  "symbol": "SCM",
 
   // logo
   "logo": "/images/chain_dark-128x128.png",
@@ -29,13 +29,13 @@
   "theme": "Slate",
 
   // port to listen for requests on.
-  "port" : 3001,
+  "port" : 8080,
 
   // database settings (MongoDB)
   "dbsettings": {
-    "user": "ciquidus",
-    "password": "3xp!0reR",
-    "database": "explorerdb",
+    "user": "",
+    "password": "",
+    "database": "simulacrum_explorer",
     "address": "localhost",
     "port": 27017
   },
@@ -47,13 +47,13 @@
   // wallet settings
   "wallet": {
     "host": "localhost",
-    "port": 11995,
-    "user": "chaincoinrpc",
-    "pass": "123gfjk3R3pCCVjHtbRde2s5kzdf233sa"
+    "port": 59473,
+    "user": "rpcuser",
+    "pass": "rpcpassword"
   },
 
   // confirmations
-  "confirmations": 40,
+  "confirmations": 20,
 
   // language settings
   "locale": "locale/en.json",
@@ -61,15 +61,15 @@
   // menu settings
   "display": {
     "api": true,
-    "markets": true,
+    "markets": false,
     "richlist": true,
     "twitter": true,
     "facebook": false,
     "googleplus": false,
     "bitcointalk": false,
-    "website": false,
+    "website": true,
     "slack": false,
-    "github": false,
+    "github": true,
     "search": true,
     "movement": true,
     "network": true
@@ -78,23 +78,23 @@
   // index page (valid options for difficulty are POW, POS or Hybrid)
   "index": {
     "show_hashrate": true,
-    "difficulty": "POW",
+    "difficulty": "POS",
     "last_txs": 100
   },
 
   // ensure links on API page are valid
   "api": {
-    "blockindex": 1337,
-    "blockhash": "00000000001b8c30360db57b575b3c2bf668b0ed50683f567afd47ae1773efb8",
-    "txhash": "285feead54e322aa69f649c4078766171df358a12f5f1517d61f303780e25511",
-    "address": "CaxX1HVWzbQ516w61XbtHR63vNmp2mvLMZ"
+    "blockindex": 0,
+    "blockhash": "00000210aeb11eeabaaa6c8eae21191c35583b1276ba915f3fadbab5970fd167",
+    "txhash": "f7e4cec149e434a28b2edb54f7000a0a502e33f16c7f3f9ee7f269741d732b94",
+    "address": "SffJMWkmcUR8So47mCZhxw9yBoWdxHkzMP"
   },
 
   // market settings
   //supported markets: bittrex, poloniex, yobit, empoex, bleutrade, cryptopia, ccex, coinexchange
   //default market is loaded by default and determines last price in header
   "markets": {
-    "coin": "CHC",
+    "coin": "SCM",
     "exchange": "BTC",
     "enabled": ["cryptopia"],
     "cryptopia_id": "2186",
@@ -120,17 +120,17 @@
   },
 
   // twitter, facebook, googleplus, bitcointalk, github, slack, website
-  "twitter": "suprnurd",
+  "twitter": "SimulacrumT",
   "facebook": "yourfacebookpage",
   "googleplus": "yourgooglepluspage",
-  "bitcointalk": "yourbitcointalktopicvalue",
-  "github": "yourgithubusername/yourgithubrepo",
+  "bitcointalk": "5216946",
+  "github": "simulacrum-trade/simulacrum",
   "slack": "yourfullslackinviteurl",
-  "website": "yourfullwebsiteurl",
+  "website": "https://simulacrum.trade",
 
   //genesis
-  "genesis_tx": "fa6ef9872494fa9662cf0fecf8c0135a6932e76d7a8764e1155207f3205c7c88",
-  "genesis_block": "00000f639db5734b2b861ef8dbccc33aebd7de44d13de000a12d093bcc866c64",
+  "genesis_tx": "f7e4cec149e434a28b2edb54f7000a0a502e33f16c7f3f9ee7f269741d732b94",
+  "genesis_block": "00000210aeb11eeabaaa6c8eae21191c35583b1276ba915f3fadbab5970fd167",
 
   //heavy (enable/disable additional heavy features)
   "heavy": false,
@@ -164,7 +164,8 @@
   // type (optional) = class of label, valid types: default, primary, warning, danger, success
   // url (optional) = url to link to for more information
   "labels": {
-  //  "CLkWg5YSLod772uLzsFRxHgHiWVGAJSezm": {"label": "Donation Address", "type":"primary", "url":"http://example.com"},
+    "SffJMWkmcUR8So47mCZhxw9yBoWdxHkzMP": {"label": "Premine Address 1", "type":"primary"},
+    "SPm56R7hK9bozc8pYxeoJRCU5XnUWzr11V": {"label": "Premine Address 2", "type":"primary"},
   //  "CaxX1HVWzbQ516w61XbtHR63vNmp2mvLMZ": {"label": "Max Lee War Chest"}
   }
 }
